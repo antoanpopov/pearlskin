@@ -14,6 +14,7 @@ keys:
 folders:
     - map: "C:/Development/projects/pearlskin"
       to: "/home/vagrant/pearlskin"
+      type: "nfs"
 
 sites:
     - map: homestead.app

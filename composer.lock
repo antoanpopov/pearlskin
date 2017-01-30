@@ -4,27 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "58c65250c2081ab56c0503b14476af0c",
+    "content-hash": "e8f5e5bb63f88fd390309a071f271053",
     "packages": [
         {
             "name": "asgardcms/blog-module",
-            "version": "1.15.0",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AsgardCms/Blog.git",
-                "reference": "e69b5e07344ead2c7e2ffc6ccb21e78931bdc262"
+                "reference": "392a54dbabed641b84ae9e790d1e6aeec6a99106"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AsgardCms/Blog/zipball/e69b5e07344ead2c7e2ffc6ccb21e78931bdc262",
-                "reference": "e69b5e07344ead2c7e2ffc6ccb21e78931bdc262",
+                "url": "https://api.github.com/repos/AsgardCms/Blog/zipball/392a54dbabed641b84ae9e790d1e6aeec6a99106",
+                "reference": "392a54dbabed641b84ae9e790d1e6aeec6a99106",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0",
-                "php": ">=5.4"
+                "doctrine/dbal": "^2.5",
+                "idavoll/core-module": "~2.0",
+                "idavoll/media-module": "~2.0",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.11",
+                "fzaninotto/faker": "~1.5",
+                "orchestra/testbench": "3.3.*",
+                "phpro/grumphp": "^0.9.1",
+                "phpunit/phpunit": "~4.0"
             },
             "type": "asgard-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0": "2.0.x-dev"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -42,7 +57,7 @@
                 "blog",
                 "journal"
             ],
-            "time": "2016-06-08T19:41:11+00:00"
+            "time": "2016-11-07T11:49:33+00:00"
         },
         {
             "name": "cartalyst/sentinel",
@@ -1993,6 +2008,52 @@
                 "laravel"
             ],
             "time": "2016-10-17T19:35:14+00:00"
+        },
+        {
+            "name": "laravel/homestead",
+            "version": "v4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/homestead.git",
+                "reference": "5af81945e933d90adfaffcf2400d23a0d511da84"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/5af81945e933d90adfaffcf2400d23a0d511da84",
+                "reference": "5af81945e933d90adfaffcf2400d23a0d511da84",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/console": "~2.3|~3.0",
+                "symfony/process": "~2.3|~3.0"
+            },
+            "bin": [
+                "homestead"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Homestead\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "A virtual machine for web artisans.",
+            "time": "2017-01-05T15:32:34+00:00"
         },
         {
             "name": "laravelcollective/html",
@@ -5812,7 +5873,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "asgardcms/blog-module": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
