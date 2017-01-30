@@ -1,11 +1,21 @@
+.github
+.idea
 /vendor
 /node_modules
 /public
+
+
+#AsgardCMS specific
 /Modules
 !/Modules/Pearlskin
 /Themes
 !/Themes/Pearlskin
-.github
-.idea
+
+# Laravel 5 & Lumen specific
+bootstrap/cache/
+.env.*.php
+.env.php
 .env
-.php_cs.cache
+
+# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
+.rocketeer/
