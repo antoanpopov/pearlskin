@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e8f5e5bb63f88fd390309a071f271053",
+    "content-hash": "8250e3d6edf662aad63bb984235b7a83",
     "packages": [
         {
             "name": "asgardcms/blog-module",
