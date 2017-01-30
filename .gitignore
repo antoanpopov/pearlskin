@@ -1,0 +1,11 @@
+/vendor
+/node_modules
+/public
+/Modules
+!/Modules/Pearlskin
+/Themes
+!/Themes/Pearlskin
+.github
+.idea
+.env
+.php_cs.cache
