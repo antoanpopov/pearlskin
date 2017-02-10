@@ -4,13 +4,13 @@
 /vendor
 /node_modules
 /public
-
+!.gitignore
 
 #AsgardCMS specific
-/Modules
 !/Modules/Pearlskin
-/Themes
+/Modules
 !/Themes/Pearlskin
+/Themes
 
 # Laravel 5 & Lumen specific
 bootstrap/cache/

@@ -1,5 +1,5 @@
 ---
-ip: "192.168.100.10"
+ip: "192.168.10.100"
 memory: 2048
 cpus: 1
 hostname: pearlskin
