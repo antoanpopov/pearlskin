@@ -1,0 +1,138 @@
+@import "variables";
+
+//Doctors Widget
+.widget-heading {
+  font-family: $font-family-headings;
+}
+
+.widget {
+
+  > ul {
+    list-style-type: none;
+    padding: 0;
+
+    > li {
+      margin-top: 15px;
+      background-color: #fff;
+      border: 1px solid #f0f0f0;
+      padding: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      transition-property: all;
+      &:hover{
+        box-shadow: 0 10px 15px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      }
+    }
+  }
+
+  .widget-title {
+    color: $color-primary;
+    font-weight: 400;
+    font-family: $font-family-headings;
+    font-style: normal;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .widget-caption {
+    line-height: 20px;
+    color: #888888;
+    font-size: 14px;
+    padding-left:5px;
+  }
+
+  .widget-thumbnail {
+
+    overflow: hidden;
+    height: 105px;
+    margin-bottom: 10px;
+    position: relative;
+
+    > .thumbnail-bump {
+      position: absolute;
+      left: -46px;
+      bottom: -45px;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: $color-white;
+    }
+
+    > .thumbnail-icon {
+      font-size: 25px;
+      position: absolute;
+      left: 5px;
+      bottom: 0;
+      color: $color-primary;
+    }
+    > a > img {
+      height: auto;
+      width: 100%;
+
+    }
+  }
+
+  .image-gallery{
+    > li {
+      float:left;
+      > a {
+        padding: 5px;
+        img {
+          width: 160px;
+          height: 90px;
+          padding: 4px;
+          box-shadow: 0 0 1px #ccc;
+        }
+      }
+    }
+  }
+}
+
+// SERVICE COUNTER
+.widget-service-counter {
+  color: #fff;
+  background-color: $color-primary;
+  padding: 40px 0;
+  ul {
+    > li {
+      font-size: 60px;
+      font-family: "Neucha", cursive;
+      padding: 30px 0;
+      text-shadow: -1px 1px 0 #333;
+      > p {
+        font-size: 25px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+//ABOUT US HIGHLIGHT
+.widget-about-us-highlight {
+  background-color: $color-primary;
+  position: relative;
+  color: #fff;
+  h3{
+    color: #fff;
+  }
+  .featured-item {
+     a {
+      color: #fff;
+      font-size: 25px;
+    }
+    > .media-body > p {
+      color: #fff;
+      font-size: 14px;
+      font-style: italic;
+    }
+    .featured-icon {
+      padding: 21px;
+      margin-bottom: 2px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: $color-secondary;
+      color: #fff;
+      width: 60px;
+    }
+  }
+}

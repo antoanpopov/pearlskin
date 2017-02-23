@@ -1,0 +1,30 @@
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  outline: 0;
+}
+
+.footer-navbar > li {
+  font-family: "Neucha", cursive;
+  float: none;
+  padding: 4px 0 !important;
+  > a {
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: initial;
+    color: #84898b;
+    &:focus,
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+    > .fa {
+      display: block;
+      font-size: 14px;
+      float: left;
+      margin-right: 5px;
+      margin-top: 2px;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+node_modules
+!.gitignore
+!resources
+resources/vendor
+!views
