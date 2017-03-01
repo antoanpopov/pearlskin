@@ -84,6 +84,8 @@ return [
         'selectize-default.css' => ['module' => 'core:vendor/selectize/dist/css/selectize.default.css'],
         'animate.css' => ['theme' => 'vendor/animate.css/animate.min.css'],
         'pace.css' => ['theme' => 'vendor/admin-lte/plugins/pace/pace.min.css'],
+        'fullcalendar.css' => ['module' => 'pearlskin:vendor/fullcalendar/dist/fullcalendar.min.css'],
+        'datetimepicker.css' => ['module' => 'pearlskin:vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css'],
         // Javascript
         'bootstrap.js' => ['theme' => 'vendor/bootstrap/dist/js/bootstrap.min.js'],
         'mousetrap.js' => ['theme' => 'js/vendor/mousetrap.min.js'],
@@ -110,6 +112,9 @@ return [
         'pace.js' => ['theme' => 'vendor/admin-lte/plugins/pace/pace.min.js'],
         'moment.js' => ['theme' => 'vendor/admin-lte/plugins/daterangepicker/moment.min.js'],
         'clipboard.js' => ['theme' => 'vendor/clipboard/dist/clipboard.min.js'],
+        'fullcalendar.js' => ['module' => 'pearlskin:vendor/fullcalendar/dist/fullcalendar.min.js'],
+        'fullcalendar-all-locales.js' => ['module' => 'pearlskin:vendor/fullcalendar/dist/locale-all.js'],
+        'datetimepicker.js' => ['module' => 'pearlskin:vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js'],
     ],
 
     /*
@@ -132,6 +137,7 @@ return [
             'pace.css',
             'selectize-default.css',
             'asgard.css',
+            'datetimepicker.css',
         ],
         'js' => [
             'bootstrap.js',
@@ -146,6 +152,8 @@ return [
             'pace.js',
             'selectize.js',
             'main.js',
+            'moment.js',
+            'datetimepicker.js',
         ],
     ],
 

@@ -30,7 +30,8 @@
         "idavoll/adminlte-theme": "~2.0",
         "laravel/homestead": "^4.0",
         "asgardcms/blog-module": "2.0.x-dev",
-        "davejamesmiller/laravel-breadcrumbs": "^3.0"
+        "davejamesmiller/laravel-breadcrumbs": "^3.0",
+        "yajra/laravel-datatables-oracle": "~6.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
