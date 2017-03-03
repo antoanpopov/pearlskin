@@ -14,7 +14,7 @@
     {!! Breadcrumbs::render('page',$page) !!}
     <div class="container content">
         <div class="col-md-9 col-sm-12">
-            <div style="padding-bottom:20px; margin: 15px auto;">
+            <div style="padding-bottom:20px; margin: 0 auto 20px auto;">
                 <h3 class="text-center">{{ $page->title }}</h3>
                 <div style="position:relative;">
                     <span class="under-bump">‿</span>
@@ -27,7 +27,5 @@
         </aside>
     </div>
     @include('widgets.service_counter')
-    <div class="container content">
-        {!! $page->body !!}
-    </div>
+    <div class="clearfix"></div>
 @stop

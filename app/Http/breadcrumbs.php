@@ -5,6 +5,7 @@
  * Date: 25.12.2016 г.
  * Time: 23:20
  */
+$locale = LaravelLocalization::setLocale() ?: App::getLocale();
 // Home
 Breadcrumbs::register('homepage', function ($breadcrumbs) {
     $breadcrumbs->push('Home', url('/'));
@@ -16,14 +17,14 @@ Breadcrumbs::register('page', function ($breadcrumbs, $page) {
 });
 
 // Home > Blog
-Breadcrumbs::register('blog', function ($breadcrumbs) {
+Breadcrumbs::register($locale.'.blog', function ($breadcrumbs) use($locale) {
     $breadcrumbs->parent('homepage');
-    $breadcrumbs->push(trans('pearlskin::breadcrumbs.blog'), route('blog'));
+    $breadcrumbs->push(trans('pearlskin::breadcrumbs.blog'), route($locale.'.blog'));
 });
 // Home > Blog > [Post]
-Breadcrumbs::register('blog.post', function ($breadcrumbs, $post) {
-    $breadcrumbs->parent('blog');
-    $breadcrumbs->push($post->title, route('blog.slug', $post->slug));
+Breadcrumbs::register($locale.'.blog.post', function ($breadcrumbs, $post) use($locale){
+    $breadcrumbs->parent($locale.'.blog');
+    $breadcrumbs->push($post->title, route($locale.'.blog.slug', $post->slug));
 });
 //HOME > OUR TEAM > [DOCTOR]
 Breadcrumbs::register('doctor', function ($breadcrumbs, $doctor) {

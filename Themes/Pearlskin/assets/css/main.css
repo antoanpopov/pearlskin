@@ -7545,11 +7545,11 @@ button.close {
     background-color: #fff;
     border: 1px solid #f0f0f0;
     padding: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.12), 0 0 0 rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-property: all; }
     .widget > ul > li:hover {
-      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25), 0 0 0 rgba(0, 0, 0, 0.22); }
 
 .widget .widget-title {
   color: #8e85b0;
@@ -7601,7 +7601,8 @@ button.close {
 .widget-service-counter {
   color: #fff;
   background-color: #8e85b0;
-  padding: 40px 0; }
+  padding: 40px 0;
+  margin-bottom: 100px; }
   .widget-service-counter ul > li {
     font-size: 60px;
     font-family: "Neucha", cursive;
@@ -7720,7 +7721,7 @@ h5, .h5 {
 /** END BUMPS **/
 .swiper-container {
   width: 100%;
-  height: 700px;
+  height: 600px;
   z-index: 0 !important; }
 
 .swiper-slide {
@@ -7753,7 +7754,7 @@ h5, .h5 {
 .content {
   position: relative;
   z-index: 0;
-  padding: 50px 0 200px 0;
+  padding: 15px 0 200px 0;
   text-align: justify; }
 
 .footer-main {
@@ -7993,13 +7994,15 @@ footer {
 
 @media (max-width: 768px) {
   .content {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 15px;
+    padding-right: 15px;
     box-sizing: border-box; }
   .row {
     margin: 0; }
   .col-xs-12, .col-sm-12 {
-    padding: 0; } }
+    padding: 0; }
+  .swiper-container {
+    height: auto; } }
 
 .comment-list {
   padding: 0;
@@ -8037,10 +8040,29 @@ footer {
   background-color: transparent;
   outline: 0; }
 
+.navbar {
+  margin-bottom: 0;
+  border: 0; }
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white; }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #8e85b0; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #8e85b0;
+  background-color: transparent;
+  border-bottom: 2px solid #8e85b0; }
+
 .footer-navbar > li {
   font-family: "Neucha", cursive;
   float: none;
-  padding: 4px 0 !important; }
+  padding: 4px 0; }
   .footer-navbar > li > a {
     font-size: 18px;
     font-weight: normal;
@@ -8054,5 +8076,22 @@ footer {
       float: left;
       margin-right: 5px;
       margin-top: 2px; }
+
+@media (max-width: 768px) {
+  header {
+    padding: 0; }
+    header > .container {
+      padding: 0; }
+      header > .container > .navbar-default > .navbar-header {
+        background-color: #8e85b0; }
+        header > .container > .navbar-default > .navbar-header > .navbar-brand {
+          padding-top: 15px;
+          color: white; }
+      header > .container .navbar-nav > li > a {
+        padding: 0 10px 15px 10px; }
+  .footer-navbar > li {
+    padding: 10px 15px; }
+    .footer-navbar > li > a {
+      font-size: 24px; } }
 
 /*# sourceMappingURL=main.css.map */

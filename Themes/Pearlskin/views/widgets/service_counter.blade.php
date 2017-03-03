@@ -1,7 +1,7 @@
 <div class="widget-service-counter">
     <div class="container">
         <ul class="row list-unstyled">
-            <li class="col-xs-6 col-md-4 text-center">
+            <li class="col-xs-12 col-md-4 text-center">
                 <span data-widget="service-counter"
                       data-value-start="0"
                       data-value-end="148">
@@ -11,7 +11,7 @@
                     Процедури
                 </p>
             </li>
-            <li class="col-xs-6 col-md-4 text-center">
+            <li class="col-xs-12 col-md-4 text-center">
                 <span data-widget="service-counter"
                       data-value-start="0"
                       data-value-end="1903">
@@ -21,7 +21,7 @@
                     Доволни клиенти
                 </p>
             </li>
-            <li class="col-xs-6 col-md-4 text-center">
+            <li class="col-xs-12 col-md-4 text-center">
         <span data-widget="service-counter"
               data-value-start="0"
               data-value-end="10825">

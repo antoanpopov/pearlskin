@@ -51,7 +51,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <p class="copyright">© 2016 Pearlskin</p>
+                    <p class="copyright">© <?= date('Y'); ?> Pearlskin</p>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <p class="custom-text">
