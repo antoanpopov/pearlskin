@@ -6,12 +6,6 @@
 /public
 !.gitignore
 
-#AsgardCMS specific
-!/Modules/Pearlskin
-/Modules
-!/Themes/Pearlskin
-/Themes
-
 # Laravel 5 & Lumen specific
 bootstrap/cache/
 .env.*.php

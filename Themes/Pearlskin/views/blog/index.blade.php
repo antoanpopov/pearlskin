@@ -17,7 +17,7 @@
                         <div class="thumbnail">
                             <div class="thumbnail-image-container">
                                 @if(count($post->files()->where('zone', 'thumbnail')->get()))
-                                    <img src="{{ Imagy::getThumbnail($post->files()->where('zone', 'thumbnail')->get()[0]->path, 'mediumThumb') }}"
+                                    <img src="{{ Imagy::getThumbnail($post->files()->where('zone', 'thumbnail')->get()[0]->path, 'mediumWidget') }}"
                                          alt="{{ $post->title }}"/>
                                 @else
                                     <img src="{{asset('assets/img/default_image.jpg')}}"
@@ -25,10 +25,6 @@
                                 @endif
                             </div>
                             <div class="thumbnail-caption">
-                                <div class="thumbnail-bump"></div>
-                                <div class="thumbnail-icon">
-                                    <i class="fa fa-align-left"></i>
-                                </div>
                                 <h5 class="thumbnail-title">
                                     {{ $post->title }}
                                 </h5>
