@@ -30,7 +30,7 @@ return [
     | colors are available for you to use: skin-blue, skin-green,
     | skin-black, skin-purple, skin-red and skin-yellow.
     */
-    'skin' => 'skin-blue',
+    'skin' => 'skin-purple',
 
     /*
     |--------------------------------------------------------------------------
@@ -40,7 +40,7 @@ return [
     | provided by default. This is useful if you wish to customise
     | the toolbar and other possible options.
     */
-    'ckeditor-config-file-path' => '',
+    'ckeditor-config-file-path' => '/assets/ckeditor/config.js',
 
     /*
     |--------------------------------------------------------------------------
@@ -84,8 +84,6 @@ return [
         'selectize-default.css' => ['module' => 'core:vendor/selectize/dist/css/selectize.default.css'],
         'animate.css' => ['theme' => 'vendor/animate.css/animate.min.css'],
         'pace.css' => ['theme' => 'vendor/admin-lte/plugins/pace/pace.min.css'],
-        'fullcalendar.css' => ['module' => 'pearlskin:vendor/fullcalendar/dist/fullcalendar.min.css'],
-        'datetimepicker.css' => ['module' => 'pearlskin:vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css'],
         // Javascript
         'bootstrap.js' => ['theme' => 'vendor/bootstrap/dist/js/bootstrap.min.js'],
         'mousetrap.js' => ['theme' => 'js/vendor/mousetrap.min.js'],
@@ -96,7 +94,7 @@ return [
         'jquery.slug.js' => ['theme' => 'js/vendor/jquery.slug.js'],
         'app.js' => ['theme' => 'vendor/admin-lte/dist/js/app.js'],
         'keypressAction.js' => ['module' => 'core:js/keypressAction.js'],
-        'ckeditor.js' => ['theme' => 'js/vendor/ckeditor/ckeditor.js'],
+        'ckeditor.js' => ['module' => 'pearlskin:vendor/ckeditor/ckeditor.js'],
         'lodash.js' => ['module' => 'dashboard:vendor/lodash/lodash.min.js'],
         'jquery-ui-core.js' => ['module' => 'dashboard:vendor/jquery-ui/ui/minified/core.min.js'],
         'jquery-ui-widget.js' => ['module' => 'dashboard:vendor/jquery-ui/ui/minified/widget.min.js'],
@@ -112,9 +110,19 @@ return [
         'pace.js' => ['theme' => 'vendor/admin-lte/plugins/pace/pace.min.js'],
         'moment.js' => ['theme' => 'vendor/admin-lte/plugins/daterangepicker/moment.min.js'],
         'clipboard.js' => ['theme' => 'vendor/clipboard/dist/clipboard.min.js'],
+
+        //PEARLSKIN MODULE SPECIFIC
+        'pearlskin.css' => ['module' => 'pearlskin:css/pearlskin.css'],
+        //FULLCALENDAR
+        'fullcalendar.css' => ['module' => 'pearlskin:vendor/fullcalendar/dist/fullcalendar.min.css'],
         'fullcalendar.js' => ['module' => 'pearlskin:vendor/fullcalendar/dist/fullcalendar.min.js'],
         'fullcalendar-all-locales.js' => ['module' => 'pearlskin:vendor/fullcalendar/dist/locale-all.js'],
+        //DATETIMEPICKER
+        'datetimepicker.css' => ['module' => 'pearlskin:vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css'],
         'datetimepicker.js' => ['module' => 'pearlskin:vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js'],
+        //SELECT2
+        'select2.css' => ['module' => 'pearlskin:vendor/select2/dist/css/select2.min.css'],
+        'select2.js' => ['module' => 'pearlskin:vendor/select2/dist/js/select2.full.js'],
     ],
 
     /*
@@ -138,6 +146,8 @@ return [
             'selectize-default.css',
             'asgard.css',
             'datetimepicker.css',
+            'select2.css',
+            'pearlskin.css',
         ],
         'js' => [
             'bootstrap.js',
@@ -154,6 +164,7 @@ return [
             'main.js',
             'moment.js',
             'datetimepicker.js',
+            'select2.js',
         ],
     ],
 
