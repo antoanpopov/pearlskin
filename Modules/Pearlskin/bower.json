@@ -1,0 +1,24 @@
+{
+  "name": "Pearlskin Module",
+  "dependencies": {
+    "ckeditor": "^4.6.2",
+    "moment-timezone": ">=0.4.0",
+    "select2": "^4.0.3"
+  },
+  "homepage": "https://github.com/antoanpopov/pearlskin",
+  "authors": [
+    "Antoan Popov <a.popov@vm5.eu>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Assets/vendor",
+    "test",
+    "tests"
+  ]
+}
+

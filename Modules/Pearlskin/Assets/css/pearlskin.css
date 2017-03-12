@@ -1,0 +1,9 @@
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border-color: #d2d6de;
+    border-radius: 0;
+    height: 34px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 3px;
+}
