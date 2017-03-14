@@ -41,6 +41,7 @@ return [
         'client' => 'Клиент',
         'doctor' => 'Доктор',
         'procedure' => 'Процедура',
+        'procedures' => 'Процедури',
         'category' => 'Категория',
         'categories' => 'Категории',
         'subject' => 'Тема',
