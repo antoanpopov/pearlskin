@@ -129,7 +129,7 @@ class ManipulationController extends AdminBaseController
 
         $manipulations = Manipulation::with('client')->with('doctor')
         ->select('pearlskin__manipulations.*')
-        ->orderBy('pearlskin__manipulations.date_of_manipulation','ASC');
+        ->orderBy('pearlskin__manipulations.date_of_manipulation','DESC');
 
         return Datatables::eloquent($manipulations)
             ->filter(function ($query) use ($request) {
@@ -145,6 +145,14 @@ class ManipulationController extends AdminBaseController
             })
             ->editColumn('client.names',function($manipulation){
                 return ($manipulation->client)? $manipulation->client->names : '---';
+            })
+            ->addColumn('procedures',function ($manipulation){
+                $proceduresNames = [];
+                foreach ($manipulation->procedures as $procedure){
+                    array_push($proceduresNames, $procedure->title);
+                }
+
+                return implode(', ', $proceduresNames);
             })
             ->addColumn(
                 'actions',

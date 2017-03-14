@@ -63,6 +63,7 @@
                         <tr>
                             <th>{{ trans('pearlskin::common.form.client') }}</th>
                             <th>{{ trans('pearlskin::common.form.doctor') }}</th>
+                            <th>{{ trans('pearlskin::common.form.procedures') }}</th>
                             <th>{{ trans('pearlskin::common.form.amount paid') }}</th>
                             <th>{{ trans('pearlskin::common.form.description') }}</th>
                             <th>{{ trans('pearlskin::common.form.created at') }}</th>
@@ -73,6 +74,7 @@
                         <tr>
                             <th>{{ trans('pearlskin::common.form.client') }}</th>
                             <th>{{ trans('pearlskin::common.form.doctor') }}</th>
+                            <th>{{ trans('pearlskin::common.form.procedures') }}</th>
                             <th>{{ trans('pearlskin::common.form.amount paid') }}</th>
                             <th>{{ trans('pearlskin::common.form.description') }}</th>
                             <th>{{ trans('pearlskin::common.form.created at') }}</th>
@@ -125,6 +127,7 @@
                 columns: [
                     {data: 'client.names', name: 'client.names'},
                     {data: 'doctor.names', name: 'doctor.names'},
+                    {data: 'procedures', name: 'procedures'},
                     {data: 'amount_paid', name: 'amount_paid'},
                     {data: 'description', name: 'description'},
                     {data: 'date_of_manipulation', name: 'date_of_manipulation'},
