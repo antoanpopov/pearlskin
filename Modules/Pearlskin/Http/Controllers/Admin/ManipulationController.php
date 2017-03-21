@@ -47,7 +47,8 @@ class ManipulationController extends AdminBaseController
     {
         $clients = $this->clientRepository->all();
         $doctors = $this->doctorRepository->all();
-        return view('pearlskin::admin.manipulations.index', compact('clients','doctors'));
+        $procedures = $this->procedureRepository->all();
+        return view('pearlskin::admin.manipulations.index', compact('clients','doctors','procedures'));
     }
 
     /**
@@ -127,7 +128,7 @@ class ManipulationController extends AdminBaseController
     public function datatable(Request $request)
     {
 
-        $manipulations = Manipulation::with('client')->with('doctor')
+        $manipulations = Manipulation::with('client')->with('doctor')->with('procedures')
         ->select('pearlskin__manipulations.*')
         ->orderBy('pearlskin__manipulations.date_of_manipulation','DESC');
 
@@ -138,6 +139,12 @@ class ManipulationController extends AdminBaseController
                 }
                 if ($request->has('doctor_id')) {
                     $query->where('doctor_id', '=', $request->get('doctor_id'));
+                }
+
+                if ($request->has('procedure_id')) {
+                    $query->join('pearlskin__manipulations_procedures','pearlskin__manipulations_procedures.manipulation_id', '=','pearlskin__manipulations.id')
+                        ->distinct();
+                    $query->where('pearlskin__manipulations_procedures.procedure_id', '=', $request->get('procedure_id'));
                 }
             })
             ->editColumn('doctor.names',function($manipulation){

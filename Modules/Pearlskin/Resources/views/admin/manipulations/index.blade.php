@@ -43,6 +43,15 @@
                                 @endforeach
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label for="procedure_id">{{ trans('pearlskin::common.form.procedure') }}</label>
+                            <select class="form-control" name="procedure_id" id="procedure_id">
+                                <option value="">{{trans('pearlskin::common.labels.all')}}</option>
+                                @foreach($procedures as $procedure)
+                                    <option value="{{$procedure->id}}">{{$procedure->title}}</option>
+                                @endforeach
+                            </select>
+                        </div>
                     </div>
                     <div class="box-footer">
                         <button type="submit" class="btn btn-primary col-xs-12">
@@ -122,6 +131,7 @@
                     data: function (d) {
                         d.client_id = $('select[name=client_id]').val();
                         d.doctor_id = $('select[name=doctor_id]').val();
+                        d.procedure_id = $('select[name=procedure_id]').val();
                     }
                 },
                 columns: [
